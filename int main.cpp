@@ -71,7 +71,7 @@ bool leeAlgorithm(
     int shortcut=dist;
     int dire[2]={0};
     int newDire[2]={0};
-    vector<vector<int>> shortestPath=grid; //¬ö¿ı³Ìµu¸ô®|ªººô®æ (¤è«K¤§«á°µSVG)
+    vector<vector<int>> shortestPath=grid; //ç´€éŒ„æœ€çŸ­è·¯å¾‘çš„ç¶²æ ¼ (æ–¹ä¾¿ä¹‹å¾ŒåšSVG)
 	 
     int lastDire=0;
     int turnCount = 0;
@@ -124,7 +124,7 @@ shortestPath[sink.first][sink.second] = -3;
     output<< "TotalLength "<<shortcut<<endl;
     output << "Source " << src.second <<" "<<-src.first-1+grid.size()<< endl;
     output << "Bend " << turnCount << endl;
-        for(int i=0;i<turnCount;i++){
+        for(int i=turnCount-1;i>=0;i--){
         	output<<bend_y[i]<<" "<<-bend_x[i]-1+grid.size()<<endl;
 		}
     output << "Sink " << sink.second <<" "<<-sink.first-1+grid.size()<< endl;
