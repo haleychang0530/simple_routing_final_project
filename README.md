@@ -1,3 +1,13 @@
+# CS Final Project 
+This is my personal version of the final project for "Introduction to Computers and Programming" (Fall 2024).  
+The original project was co-developed with a teammate.
+
+## My Contributions
+- **Algorithm Design**: Developed and optimized the core routing algorithm for network pathfinding.
+- **Performance Optimization**: Improved algorithm efficiency and reduced computation time for large datasets.
+- **Testing**: Implemented unit tests for the algorithm to ensure accuracy and reliability.
+
+## Project Description
 In chip design, the routing problem involves finding paths to connect circuit
 components on a chip while avoiding obstacles. Lee’s Algorithm is a classic
 method for routing on a grid, and it guarantees a shortest path.
